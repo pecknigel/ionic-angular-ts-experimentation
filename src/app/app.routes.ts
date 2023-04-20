@@ -10,4 +10,8 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'datepicker',
+    loadComponent: () => import('./datepicker/datepicker.page').then( m => m.DatepickerPage)
+  },
 ];
