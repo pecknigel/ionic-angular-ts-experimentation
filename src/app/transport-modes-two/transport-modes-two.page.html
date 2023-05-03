@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>transport-modes-two</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">transport-modes-two</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-select>
+    <ion-select-option
+      *ngFor="let transportMode of transportModes"
+      [value]="transportMode.id"
+    >
+      {{ transportMode.name }}
+    </ion-select-option>
+  </ion-select>
+</ion-content>
